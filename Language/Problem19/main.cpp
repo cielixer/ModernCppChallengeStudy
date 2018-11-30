@@ -1,3 +1,6 @@
+// **fold expression : 종료조건을 사용 vs variadic template 이랑 다른거임
+// template 에서 타입에 대한 문제 => static_assert 을 사용 -> concept 
+
 template <typename Container>
 void append_back(Container& _con) {};
 

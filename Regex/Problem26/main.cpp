@@ -12,8 +12,10 @@ auto joinig_string(std::vector<std::string> &&words)
             { return word + " "; });
 
     return std::accumulate(std::begin(words), std::end(words), std::string{},
-        [](std::string &a, const std::string &b) -> decltype(auto)
+        [](std::string &a, const std::string &b)
             { return a += b; });
+
+    (words.end()-1)->pop_back();
 }
 
 int main(int argc, char *argv[])
