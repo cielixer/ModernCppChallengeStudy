@@ -22,7 +22,6 @@ auto par_min_max(Iter start, Iter end)
 		return std::make_pair(start, start);
 	}
 	else if (dist == 2) {
-
 		return (*start < *std::next(start) ?
 			std::make_pair(start, std::next(start))
 							:
